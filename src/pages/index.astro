@@ -1,0 +1,41 @@
+---
+
+import Layout from '../layouts/Layout.astro';
+import { main } from '../data/index.ts';
+import Logo from '../assets/images/logo.jpg';
+import Image from 'astro/components/Image.astro';
+import Link from '../components/link.astro';
+---
+
+<Layout className="layout">
+	<main class="main">
+		<div class="container">
+			<header class="main__header">
+				<div class="main__logo">
+					<Image src={Logo} alt="Logo" class="main__logo" />		
+				</div>	
+				<h1 class="main__title">{main.title}</h1>
+			</header>	
+			<section class="main__section">
+				<Link text={main.buttonInstText} href={main.buttonInstLink} className="main__link" />
+				<Link text={main.buttonTiktokText} href={main.buttonTiktokLink} className="main__link" />
+				<Link text={main.buttonPhoneText} href={main.buttonPhoneLink} className="main__link" />
+			</section>
+			<footer class="main__footer">
+				<p class="address">
+					<span class="address__city">{main.cityChg}</span> 
+					<span class="address__street">
+						{main.addressChg}
+					</span>
+				</p>
+				<p class="address">
+					<span class="address__city">{main.cityLviv}</span> 
+					<span class="address__street">
+						{main.addressLviv}
+					</span>
+				</p>
+			</footer>
+		</div>
+		
+	</main>
+</Layout>

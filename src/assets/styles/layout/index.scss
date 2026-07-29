@@ -1,0 +1,17 @@
+.layout {
+  background: url("../../images/Background.png") repeat 0 0 / 390px 844px;
+  background-color: red;
+  padding-top: 5rem;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 30rem;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  height: 100vh;
+
+  grid-template-rows: 1fr 2fr 1fr;
+}

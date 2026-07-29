@@ -1,0 +1,15 @@
+export const main = {
+  title: "Магазин Оригінального Взуття 100K",
+  buttonInstText: "Instagram",
+  buttonTiktokText: "TikTok",
+  buttonVberText: "Viber",
+  buttonPhoneText: "+380661021878",
+  buttonInstLink: "#",
+  buttonTiktokLink: "#",
+  buttonVberLink: "#",
+  buttonPhoneLink: "#",
+  cityChg: "м.Шептицький",
+  cityLviv: "м.Львів",
+  addressChg: `вул. Шевченка 12, Бандери 12`,
+  addressLviv: `проспект червоної калини 64`,
+};

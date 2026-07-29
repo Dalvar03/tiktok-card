@@ -1,0 +1,21 @@
+@use "sass:math";
+
+@function toIndex($value) {
+  $resValue: calc(
+    (var(--vw, 1vw) + var(--vh, 1vh)) * (#{$value} / var(--toIndex, 30))
+  );
+  @return $resValue;
+}
+
+:root {
+  $mobile: math.div(10, 3.75) * 1vw;
+  $tablet: math.div(10, 7.68) * 1vw;
+  font-size: $mobile;
+  @include breakpoint-min(md) {
+    font-size: $tablet;
+  }
+  @include breakpoint-min(xl) {
+    --toIndex: 22.28;
+    font-size: toIndex(10);
+  }
+}

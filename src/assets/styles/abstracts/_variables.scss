@@ -1,0 +1,42 @@
+//Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+//Global
+$container-padding: 1.5rem;
+$container-padding-md: 5rem;
+$container-padding-xl: 9.5rem;
+$container-padding-vertical: 5rem;
+$page-width: 140rem;
+
+//Shadow
+$shadow-icon: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+$form-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+$gradient: linear-gradient(to bottom, #0d1b2a, #0d1b2a 50%, #fff);
+
+//Transition
+$tranform: linear 250ms;
+$transition: linear 250ms;
+
+//Fonts
+$font-title: 'Alfa Slab One';
+$font-subtitle: 'Annapurna SIL';
+$font-text: 'Mulish';
+
+//Colors
+$primary: #0d1b2a;
+$white: #ffffff;
+$black: #000000;
+$accent: #00b4d8;
+$neutral: #e0e1dd;
+$white-40: rgba(
+    $color: $white,
+    $alpha: 0.4,
+);
+$white-80: rgba(
+    $color: $white,
+    $alpha: 0.8,
+);
